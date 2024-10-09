@@ -1,0 +1,310 @@
+/* Reset default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 20px; /* Adjust based on navbar height */
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background-color: #1e1e1e; /* Dark background for a moody effect */
+    color: #e0d4a6; /* Light beige for text */
+}
+
+/* Header Styling */
+header {
+    background-color: #3b2a2a; /* Dark brown for header */
+    color: #e0d4a6; /* Light beige */
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navbar styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Adjusted height */
+    background-color: rgba(92, 58, 41, 0.8); /* Darker color for better visibility */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+/* Navbar list styles */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* Removed flex-wrap */
+}
+
+/* Navbar item styles */
+.navbar ul li {
+    margin-left: 20px;
+}
+
+/* Navbar link styles */
+.navbar ul li a {
+    color: #e0d4a6; /* Light beige for links */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Font size */
+    padding: 10px; /* Add padding for better click area */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Change background color on hover */
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+.logo {
+    font-size: 2.5em;
+    font-family: 'Times New Roman', serif;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 2em; /* Size of hamburger icon */
+    cursor: pointer; /* Cursor change on hover */
+}
+
+/* Navbar links (initially hidden on mobile) */
+.nav-links {
+    display: flex; /* Show links in desktop */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links on mobile */
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Full width */
+        background-color: rgba(92, 58, 41, 0.9); /* Background for mobile */
+        position: absolute; /* Positioning for dropdown */
+        top: 60px; /* Below the navbar */
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    /* Ensure hamburger icon is shown */
+    .hamburger {
+        display: block; /* Show hamburger icon on mobile */
+    }
+}
+
+
+
+/* Hero Section */
+#hero {
+    background: url('gallery/hero2.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e0d4a6; /* Light beige for hero text */
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 4em;
+}
+
+#hero p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #c15b3a; /* Burnt orange for buttons */
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #a0522d; /* Darker burnt orange on hover */
+}
+
+/* Section Styling */
+.content-section {
+    padding: 50px 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Gallery Styling */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Image Styling */
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Darker shadow for depth */
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #3b2a2a; /* Dark brown for footer */
+    color: #e0d4a6; /* Light beige */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Video Container Styling */
+.video-container {
+    display: flex;
+    justify-content: center; /* Center the video */
+    margin: 20px 0;         /* Space above and below */
+}
+
+/* Iframe Styling */
+.video-container iframe {
+    width: 100%;             /* Make the iframe responsive */
+    max-width: 800px;       /* Set a maximum width for larger screens */
+    height: 450px;          /* Set a fixed height */
+    border-radius: 10px;    /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Darker shadow for depth */
+    transition: transform 0.3s; /* Add transition for hover effect */
+}
+
+/* Additional Styles for Overview Section */
+.content-section blockquote {
+    font-style: italic;
+    border-left: 2px solid #c15b3a; /* Use the burnt orange color */
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.content-section ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+}
+
+.content-section ul li {
+    background-color: rgba(92, 58, 41, 0.5); /* Slightly transparent background */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.content-section li:hover{
+    transform: scale(1.05);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        height: 50px; /* Height for mobile */
+        padding: 0 10px; /* Reduced padding */
+    }
+
+    .navbar .logo {
+        font-size: 1.5em; /* Smaller logo on mobile */
+    }
+
+    .navbar ul li {
+        margin-left: 15px; /* Reduce space between items on mobile */
+    }
+
+    .navbar ul li a {
+        font-size: 0.9em; /* Smaller font size on mobile */
+        padding: 5px; /* Reduced padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        height: 45px; /* Further reduce height */
+        padding: 0 5px; /* Minimal padding */
+    }
+
+    .navbar .logo {
+        font-size: 1.2em; /* Further reduce logo size */
+    }
+
+    .navbar ul li {
+        margin-left: 10px; /* Further reduce space between items */
+    }
+
+    .navbar ul li a {
+        font-size: 0.8em; /* Further reduce font size */
+        padding: 4px; /* Further reduce padding */
+    }
+}
+
+/* Logo Responsive */
+.logo img {
+    max-width: 100%; /* Make the logo responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+hr {
+    border: none; /* Remove the default border */
+    height: 3px; /* Thickness of the line */
+    background: linear-gradient(to right, transparent, #a0522d, transparent); /* Fading effect on both sides */
+    margin: 20px 0; /* Space above and below */
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: 400px; /* Set a fixed height based on your tallest image */
+    overflow: hidden; /* Prevent overflow */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.character-image {
+    max-width: 100%;
+    height: 100%; /* Ensure the image covers the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+
+.captions-container {
+    text-align: center; /* Center the captions */
+    color: #e0d4a6; /* Text color */
+    padding: 10px 0; /* Padding above and below captions */
+    background-color: rgba(0, 0, 0, 0.6); /* Optional background for better visibility */
+    border-left: 5px solid #a0522d;
+}
+
+.caption {
+    display: none; /* Hide all captions by default */
+    padding: 10px; /* Padding for the caption */
+    font-style: italic;
+}

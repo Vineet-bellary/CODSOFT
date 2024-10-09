@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Red Dead Redemption 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo">Red Dead Redemption 2</h1>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger Icon -->
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#gameplay">Gameplay</a></li>
+                    <li><a href="#story">Story</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Explore the Wild West</h2>
+            <p>The most immersive open-world game in the genre</p>
+            <a href="#overview" class="btn">Discover More</a>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Overview Section -->
+<section id="overview" class="content-section" style="background: url('gallery/overview-bg.jpg') no-repeat center center/cover; padding: 50px 20px; color: #e0d4a6;">
+    <h2>Overview</h2>
+    <p>Red Dead Redemption 2 is an open-world game set in the late 1800s in America, offering an expansive world of outlaws, survival, and moral dilemmas.</p>
+    <blockquote>
+        <p>"The world is yours for the taking, but at what cost?"</p>
+        <cite>— Arthur Morgan</cite>
+    </blockquote>
+    <h3>Key Features:</h3>
+    <ul>
+        <li>Immersive open-world environment</li>
+        <li>Diverse wildlife and activities</li>
+        <li>Complex characters and storylines</li>
+        <li>Realistic physics and interactions</li>
+        <li>Engaging multiplayer mode</li>
+    </ul>
+</section>
+
+<hr>
+
+<!-- Story Section -->
+<section id="story" class="content-section" style="background: url('gallery/story-bg.jpg') no-repeat center center/cover; padding: 50px 20px; color: #e0d4a6;">
+    <h2>Story</h2>
+    <p>Follow Arthur Morgan, a member of the Van der Linde gang, as he struggles to survive in a rapidly changing world.</p>
+
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="gallery/arthur.jpg" alt="Arthur Morgan" class="character-image">
+        </div>
+        <div class="mySlides fade">
+            <img src="gallery/john.jpg" alt="John Marston" class="character-image">
+        </div>
+        <div class="mySlides fade">
+            <img src="gallery/Dutch.jpg" alt="Dutch Van der Linde" class="character-image">
+        </div>
+        <div class="mySlides fade">
+            <img src="gallery/saddie.jpg" alt="Sadie Adler" class="character-image">
+        </div>
+        <div class="mySlides fade">
+            <img src="gallery/micah.jpg" alt="Micah Bell" class="character-image">
+        </div>
+        <div class="mySlides fade">
+            <img src="gallery/hosea.jpg" alt="Hosea Matthews" class="character-image">
+        </div>
+    </div>
+    
+    <!-- Captions Container -->
+    <div class="captions-container">
+        <div class="caption" id="caption-1">"I'm not a hero. I'm just a man trying to survive." — Arthur Morgan</div>
+        <div class="caption" id="caption-2">"You have to be strong. You have to fight for your family." — John Marston</div>
+        <div class="caption" id="caption-3">"We are all we have." — Dutch Van der Linde</div>
+        <div class="caption" id="caption-4">"I'm not afraid of dying. I'm afraid of not living." — Sadie Adler</div>
+        <div class="caption" id="caption-5">"You have to take what you want." — Micah Bell</div>
+        <div class="caption" id="caption-6">"Sometimes, you have to let go." — Hosea Matthews</div>
+    </div>
+    
+
+    <br>
+
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+
+    <h3>Story Synopsis</h3>
+    <p>Set in a beautiful yet ruthless landscape, the story of Red Dead Redemption 2 follows Arthur Morgan and the Van der Linde gang as they navigate the challenges of outlaw life amidst a changing America. Themes of loyalty, betrayal, and the struggle for redemption intertwine as the gang faces law enforcement and rival factions.</p>
+
+</section>
+
+<hr>
+
+    <!-- Gameplay Section -->
+    <section id="gameplay" class="content-section">
+        <h2>Gameplay</h2>
+        <p>From hunting to heists, exploring the vast countryside, or engaging in epic shootouts, RDR2 offers players countless opportunities to live out their wild west fantasies.</p>
+
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Dw_oH5oiUSE?si=4hK8j2yzK7hzktXz&amp;start=3&autoplay=0&controls=1&mute=1" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+
+    <hr>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="content-section">
+        <h2>Gallery</h2>
+        <div id="gallery-grid" class="gallery-grid">
+            <img src="gallery\1.jpg" alt="RDR2">
+            <img src="gallery\2.jpg" alt="RDR2">
+            <img src="gallery\3.jpg" alt="RDR2">
+            <img src="gallery\4.jpg" alt="RDR2">
+            <img src="gallery\5.jpg" alt="RDR2">
+            <img src="gallery\6.jpg" alt="RDR2">
+            <img src="gallery\7.jpg" alt="RDR2">
+            <img src="gallery\8.jpg" alt="RDR2">
+            <img src="gallery\9.jpg" alt="RDR2">
+            <img src="gallery\10.jpg" alt="RDR2">
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Red Dead Redemption 2 Fan Page. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
